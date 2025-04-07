@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestor de Vendedores</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Gestor de Vendedores</h1>
+
+      <div class="form-container">
+        <h2>Agregar Nuevo Vendedor</h2>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required />
+          </div>
+          <div class="form-group">
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" required />
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" required />
+          </div>
+          <button type="submit">Guardar Datos</button>
+        </form>
+      </div>
+
+      <div class="contacts-container">
+        <div class="container-head-list">
+            <h2>Lista de Vendedores</h2>
+            <button id="exportBtn" class="export-btn">Exportar a JSON</button>
+        </div>
+        <div id="contactsList"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
